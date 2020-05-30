@@ -1,0 +1,142 @@
+.GameTable {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(85, 85, 85, 0.055);
+    padding: 30px 20px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(29, 30, 43, 0.08), 0 0.9375rem 1.40625rem rgba(8,10,37,.08), 0 0.25rem 0.53125rem rgba(8,10,37,.08), 0 0.125rem 0.1875rem rgba(8,10,37,.08);
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+
+.Home {
+    width: 30%;
+    height: 110px;
+    background-color: rgb(212, 212, 212);
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.Home:hover {
+    background-color: rgb(170, 170, 170);
+    z-index: 100;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(8,10,37,.03), 0 0.9375rem 1.40625rem rgba(8,10,37,.03), 0 0.25rem 0.53125rem rgba(8,10,37,.03), 0 0.125rem 0.1875rem rgba(8,10,37,.03);
+}
+
+.GameHomeRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.EndGame {
+    pointer-events: none;
+}
+
+.ResetButton {
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(24, 132, 255);
+    color: white;
+    border: 1px solid rgb(24, 132, 255);
+    box-shadow: 0 0.46875rem 2.1875rem rgba(8,10,37,.03), 0 0.9375rem 1.40625rem rgba(8,10,37,.03), 0 0.25rem 0.53125rem rgba(8,10,37,.03), 0 0.125rem 0.1875rem rgba(8,10,37,.03);
+    transition: 0.3s;
+}
+
+.ResetButton:hover {
+    background-color: white;
+    color: rgb(24, 132, 255);
+    border-radius: 50px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(8,10,37,.08), 0 0.9375rem 1.40625rem rgba(8,10,37,.08), 0 0.25rem 0.53125rem rgba(8,10,37,.08), 0 0.125rem 0.1875rem rgba(8,10,37,.08);
+    outline: none;
+}
+
+.ResetButton:focus {
+    outline: none;
+}
+
+.ResetButton:active {
+    background-color: rgb(212, 212, 212);
+}
+
+.BlueTurn {
+    background-color: rgb(212, 212, 212);
+    transition: 0.3s;
+}
+
+.BlueTurn:hover {
+    background-color: rgb(169, 209, 255);
+}
+
+.RedTurn {
+    background-color: rgb(212, 212, 212);
+    transition: 0.3s;
+}
+
+.RedTurn:hover {
+    background-color: rgb(255, 133, 133);
+}
+
+.RedWin {
+    box-shadow: 0 0.46875rem 2.1875rem rgba(29, 30, 43, 0.1), 0 0.9375rem 1.40625rem rgba(8,10,37,.1), 0 0.25rem 0.53125rem rgba(8,10,37,.1), 0 0.125rem 0.1875rem rgba(8,10,37,.1);
+    background-color: rgb(255, 213, 213);
+    border-radius: 30px;
+}
+
+.BlueWin {
+    box-shadow: 0 0.46875rem 2.1875rem rgba(29, 30, 43, 0.1), 0 0.9375rem 1.40625rem rgba(8,10,37,.1), 0 0.25rem 0.53125rem rgba(8,10,37,.1), 0 0.125rem 0.1875rem rgba(8,10,37,.1);
+    background-color: rgb(215, 236, 255);
+    border-radius: 30px;
+}
+
+.WinnerDiv {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    color: rgb(58, 58, 58);
+    transition: 0.5s;
+}
+
+.RedWinDiv {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 60px;
+    color: rgb(255, 72, 72);
+}
+
+.BlueWinDiv {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 60px;
+    color: rgb(72, 115, 255);
+}
+
+.NoWinner {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 30px;
+}
